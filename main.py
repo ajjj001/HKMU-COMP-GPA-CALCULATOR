@@ -46,7 +46,7 @@ df = pd.read_csv(args.file)
 
 df = df[['Subject','Unit','Grade']]
 
-# FILL or DROP subjects missing grades
+# FILL or DROP subjects with missing grades
 # df.fillna('B', inplace=True)
 df.dropna(inplace=True) 
 
